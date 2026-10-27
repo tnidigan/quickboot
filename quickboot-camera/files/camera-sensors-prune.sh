@@ -9,5 +9,15 @@
 # IQ-9075 EVK to a backup directory, leaving only the relevant bins for HAL discovery.
 
 mkdir /data/sensors-to-remove
+
+# <--- LEMANS --->
 mv /usr/lib/camx/lemans/camera/com.qti.sensormodule.* /data/sensors-to-remove
 mv /data/sensors-to-remove/com.qti.sensormodule.cmk_imx577_rb8_csi* /usr/lib/camx/lemans/camera/
+
+# <--- MONACO --->
+mv /usr/lib/camx/lemans/camera/com.qti.sensormodule.* /data/sensors-to-remove
+mv /data/sensors-to-remove/com.qti.sensormodule.cmk_imx577_rb4_csi* /usr/lib/camx/lemans/camera/
+
+# <--- KODIAK --->
+mv /usr/lib/camx/kodiak/camera/com.qti.sensormodule.* /data/sensors-to-remove
+mv /data/sensors-to-remove/com.qti.sensormodule.cmk_imx577_cam* /usr/lib/camx/kodiak/camera/
